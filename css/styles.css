@@ -1,7 +1,7 @@
 /* Body */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
   background: #ffffff;
 }
@@ -155,7 +155,15 @@ header div {
 }
 
 .main {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   margin: 0 auto;
 }
@@ -230,6 +238,7 @@ header div {
   line-height: 1.2;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .target-par {
@@ -238,6 +247,18 @@ header div {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.svg-target {
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: #f4f4fd;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Section 2 Our Team */
@@ -269,11 +290,17 @@ header div {
 .team-box {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-photo {
   background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -284,7 +311,6 @@ header div {
   line-height: 1.2;
   letter-spacing: 0.4px;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-par {
@@ -293,6 +319,11 @@ header div {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+
+.svg-social-links {
+  list-style-type: none;
+  display: flex;
 }
 
 /* Section 3 Portfolio */
@@ -332,6 +363,15 @@ header div {
   gap: 32px;
   flex-shrink: 0;
   width: calc((100% - 48px) / 3);
+  border: 1px #f4f4fd;
+  background: #fff;
+}
+
+.portfolio-li:hover,
+portfolio-li:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-name {
@@ -340,7 +380,6 @@ header div {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  margin-bottom: 8px;
 }
 
 .portfolio-par {
@@ -349,6 +388,30 @@ header div {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+
+.svg-social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.svg-social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.svg-social-links .link:hover,
+.svg-social-links .link:focus {
+  background-color: #31d0aa;
+}
+
+.svg-social-links .icon-team {
+  fill: #fff;
 }
 
 /* footer (logo in the Top line) */
