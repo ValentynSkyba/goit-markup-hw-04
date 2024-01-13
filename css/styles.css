@@ -47,7 +47,13 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+
 .head-position {
   display: flex;
 }
@@ -96,6 +102,7 @@ header div {
   list-style-type: none;
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -124,8 +131,21 @@ header div {
   border-radius: 2px;
 }
 
+.nav-link current {
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link second {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-link.current::after {
   background-color: #404bbf;
+  color: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 /*.nav .nav-link {
