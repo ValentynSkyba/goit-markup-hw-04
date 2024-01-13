@@ -447,7 +447,7 @@ portfolio-li:focus {
   background-color: #31d0aa;
 }
 
-.svg-social-links .icon-team {
+.icon-team {
   fill: #fff;
 }
 
@@ -527,10 +527,6 @@ footer .logo .footer-par {
 .footer-social-links .link:hover,
 .sfooter-social-links .link:focus {
   background-color: #31d0aa;
-}
-
-.footer-social-linkss .icon-team {
-  fill: #fff;
 }
 
 .footer-h {
