@@ -116,6 +116,18 @@ header div {
   text-decoration: underline;
 }
 
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-link.current::after {
+  background-color: #404bbf;
+}
+
 /*.nav .nav-link {
   display: block;
 }*/
@@ -251,7 +263,7 @@ header div {
 
 .svg-target {
   border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  border: 1px solid #8e8f99;
   background: #f4f4fd;
   align-items: center;
   padding-top: 24px;
@@ -300,7 +312,6 @@ header div {
 }
 
 .team-list-photo {
-  background-color: #ffffff;
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -365,6 +376,32 @@ header div {
   width: calc((100% - 48px) / 3);
   border: 1px #f4f4fd;
   background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-image:hover .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-li:hover,
@@ -415,9 +452,15 @@ portfolio-li:focus {
 }
 
 /* footer (logo in the Top line) */
+.footer-logo-box {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-class {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 100px;
+  display: flex;
 }
 
 .logo-footer {
@@ -446,4 +489,50 @@ footer .logo .footer-par {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer-h {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.footer-social-links {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+}
+
+/*.port-block {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  width: 360px;
+}
+*/
+
+.footer-social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.footer-social-links .link:hover,
+.sfooter-social-links .link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-linkss .icon-team {
+  fill: #fff;
+}
+
+.footer-h {
+  margin-bottom: 16px;
 }
