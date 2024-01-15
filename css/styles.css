@@ -356,21 +356,21 @@ header div {
   justify-content: center;
 }
 
-.target-li {
+.svg-social-links .link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #404bbf;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.target-li:hover,
-.target-li:focus {
+.icon-team-sicailmedia {
+  background-color: #404bbf;
+}
+
+.svg-social-links .link:hover,
+.svg-social-links .link:focus {
   background-color: #31d0aa;
 }
 
