@@ -282,6 +282,8 @@ header div {
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 /* Section 2 Our Team */
@@ -320,8 +322,6 @@ header div {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  height: 112px;
-  margin-bottom: 8px;
 }
 
 .team-list-photo {
@@ -348,6 +348,26 @@ header div {
 .svg-social-links {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
+}
+
+.svg-social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.svg-social-links .link:hover,
+.svg-social-links .link:focus {
+  background-color: #31d0aa;
+}
+
+.icon-team {
+  fill: #fff;
 }
 
 /* Section 3 Portfolio */
@@ -438,30 +458,6 @@ portfolio-li:focus {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-}
-
-.svg-social-links {
-  display: flex;
-  justify-content: space-around;
-}
-
-.svg-social-links .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-}
-
-.svg-social-links .link:hover,
-.svg-social-links .link:focus {
-  background-color: #31d0aa;
-}
-
-.icon-team {
-  fill: #fff;
 }
 
 /* footer (logo in the Top line) */
