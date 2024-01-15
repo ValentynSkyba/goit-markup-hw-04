@@ -89,10 +89,6 @@ header div {
   color: #f4f4fd;
 }
 
-.nav-first {
-  display: flex;
-}
-
 .nav {
   font-size: 16px;
   font-weight: 500;
@@ -101,6 +97,7 @@ header div {
   list-style-type: none;
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -110,6 +107,7 @@ header div {
   display: block;
   position: relative;
   padding-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link::after {
@@ -139,6 +137,7 @@ header div {
   left: 0;
   bottom: 0;
   position: absolute;
+  bottom: -1px;
 }
 
 .adress {
@@ -162,6 +161,7 @@ header div {
   color: #434455;
   text-decoration: none;
   width: 1440px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link:hover,
