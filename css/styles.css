@@ -133,7 +133,6 @@ header div {
 }
 
 .nav-link.current::after {
-  color: #404bbf;
   background-color: #404bbf;
   left: 0;
   bottom: 0;
@@ -283,6 +282,8 @@ header div {
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 /* Section 2 Our Team */
