@@ -356,7 +356,7 @@ header div {
   justify-content: center;
 }
 
-.svg-social-links .link {
+.target-li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,10 +364,13 @@ header div {
   height: 40px;
   border-radius: 50%;
   background-color: #404bbf;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-social-links .link:hover,
-.svg-social-links .link:focus {
+.target-li:hover,
+.target-li:focus {
   background-color: #31d0aa;
 }
 
