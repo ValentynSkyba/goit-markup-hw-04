@@ -363,14 +363,28 @@ header div {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: #404bbf;
 }
 
 .icon-team-sicailmedia {
   background-color: #404bbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-social-links .link:hover,
-.svg-social-links .link:focus {
+.svg-social-links .link:hover {
+  background-color: #31d0aa;
+}
+
+svg-social-links .link:focus {
   background-color: #31d0aa;
 }
 
