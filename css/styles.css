@@ -348,7 +348,9 @@ header div {
 .svg-social-links {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .svg-social-links .link {
@@ -358,7 +360,7 @@ header div {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4d5ae5;
+  background-color: #404bbf;
 }
 
 .svg-social-links .link:hover,
