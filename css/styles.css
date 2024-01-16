@@ -479,6 +479,9 @@ portfolio-li:focus {
   align-items: baseline;
 }
 
+.footer-logo-box {
+  margin-right: 120px;
+}
 .footer-logo-block {
   margin-right: 120px;
 }
