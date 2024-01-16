@@ -483,6 +483,14 @@ portfolio-li:focus {
   margin-right: 120px;
 }
 
+.footer-h {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
 .footer-class {
   background-color: #2e2f42;
   padding: 100px;
@@ -532,21 +540,7 @@ footer .logo .footer-par {
   gap: 16px;
 }
 
-.footer-social-links .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-}
-
 .footer-social-links .link:hover,
 .sfooter-social-links .link:focus {
   background-color: #31d0aa;
-}
-
-.footer-h {
-  margin-bottom: 16px;
 }
