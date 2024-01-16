@@ -537,6 +537,10 @@ footer .logo .footer-par {
   letter-spacing: 0.32px;
 }
 
+.footer-par {
+  margin-bottom: 16px;
+}
+
 .footer-social-links {
   display: flex;
   list-style-type: none;
