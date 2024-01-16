@@ -474,9 +474,13 @@ portfolio-li:focus {
 }
 
 /* footer (logo in the Top line) */
-.footer-logo-box {
+.footer-class .container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-logo-block {
+  margin-right: 120px;
 }
 
 .footer-class {
