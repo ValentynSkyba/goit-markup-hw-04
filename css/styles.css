@@ -535,9 +535,6 @@ footer .logo .footer-par {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-}
-
-.footer-par {
   margin-bottom: 16px;
 }
 
@@ -548,6 +545,6 @@ footer .logo .footer-par {
 }
 
 .footer-social-links .link:hover,
-.sfooter-social-links .link:focus {
+.footer-social-links .link:focus {
   background-color: #31d0aa;
 }
